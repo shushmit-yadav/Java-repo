@@ -14,5 +14,12 @@ class calculator{
     int number = scan.nextInt();
     linearSearch ls=new linearSearch();
    System.out.println(ls.LinearSearch(array,number));
+    linearSort linSort=new linearSort();
+    linSort.LinearSort(array);
+    System.out.println("Enter the number to search using BinarySearch");
+    number = scan.nextInt();
+    binarysearch BS= new binarysearch();
+    //need sorted array 
+    System.out.println(bs.BinarySearch(linSort.LinearSort(array),number));
   }  
 }
